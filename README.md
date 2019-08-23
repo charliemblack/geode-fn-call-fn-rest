@@ -1,12 +1,10 @@
 # Function Calling Function with Rest API example
 
-With Geode Functions the default behavior the results are presented to the caller as a collection of results from each server.    That means if each server returns a collection.   So what gets presented is the results are a collection of collections (or whatever the function returns).    With the Geode Client we have options to change up the default result collector to aggregate the results and present the answer as a single collection.    But what about the Geode REST api.
+With Geode Functions the default behavior the results are presented to the caller as a collection of results from each server.    That means if each server returns a collection what gets presented are a collection of collections.  With the Geode Client we have options to change up the default result collector to aggregate the results and present the answer as a single collection.    But what about the Geode REST api.
 
 A rest client of the Geode REST api doesn't have Geode client libraries to help out with presenting the results in any other fashion.    So what are we to do?
 
-To quote David Wheeler is "All problems in computer science can be solved by another level of indirection" - and is Geode there is no difference.    We will have a Geode Function running on one server groom the answer from another function.
-
- 
+To quote David Wheeler is "All problems in computer science can be solved by another level of indirection" - and the same goes true with Geode.    We will have a Geode Function running on one server groom the answer from another function which is running on many hosts.
 
 # Example run through
 
